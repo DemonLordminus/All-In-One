@@ -1,0 +1,71 @@
+{
+    "name": "DataChangeInput",
+    "maps": [
+        {
+            "name": "DataChange",
+            "id": "28398e47-0834-4a7a-9103-113d40f30eda",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "1cf4005b-bdf6-465f-ae4c-3e32852f9bac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "de533827-57e5-451c-8e17-e484dc92b23f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "10189fde-11b0-4714-93c7-18005d48f511",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DataChangeControl",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78c6a8bc-54ee-4139-b4b3-c8aa250ba3a7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DataChangeControl",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "DataChangeControl",
+            "bindingGroup": "DataChangeControl",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
