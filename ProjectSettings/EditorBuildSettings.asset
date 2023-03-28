@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/TestOthers/Sial2/H1.unity
+    guid: f92b7b20bd3628241863b31f130744d2
+  - enabled: 1
+    path: Assets/TestOthers/Sial2/Persistent.unity
+    guid: baf5d0c8fade24744857dc15ffc7089b
+  - enabled: 1
+    path: Assets/TestOthers/Sial2/H2.unity
+    guid: 5afe6071680db9c478019fcf6131d7b8
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: bd75419d0c40a4c4fb471cde9a3c1d6d, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

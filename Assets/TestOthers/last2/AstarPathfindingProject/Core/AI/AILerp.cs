@@ -517,7 +517,7 @@ namespace Pathfinding {
 
 			// Reset some variables
 			ConfigureNewPath();
-
+			
 			// Release the previous path
 			// This is used for path pooling.
 			// This is done after the interpolator has been configured in the ConfigureNewPath method

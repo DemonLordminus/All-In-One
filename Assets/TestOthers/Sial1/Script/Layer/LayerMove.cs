@@ -20,10 +20,10 @@ public class LayerMove : Get_Y_Axis
     {
         //TODO:ÐÞ¸Ä1
         MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (lastMousePos != Vector3.zero)
-        {
-            distance = MousePos - lastMousePos;
-        }
+        //if (lastMousePos != Vector3.zero)
+        //{
+        //}
+        distance = MousePos - lastMousePos;
         distance = new Vector3(distance.x, 0, 0);
         //for (int i = 0; i < Cubes.Length; ++i)
         //{
@@ -35,5 +35,12 @@ public class LayerMove : Get_Y_Axis
         }
         lastMousePos = MousePos;
     }
-
+    //private void OnMouseUp()
+    //{
+    //    lastMousePos= Vector3.zero;
+    //}
+    private void OnMouseDown()
+    {
+        lastMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
 }
