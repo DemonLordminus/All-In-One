@@ -96,7 +96,7 @@ namespace ManMadeGod.DataChange
             float distance = Vector2.Distance(target, _lastClickOne.transform.position);
             float scaleX = distance / _linkWidth;
             nowLink.transform.localScale = new Vector2(scaleX, nowLink.transform.localScale.y);
-            nowLink.transform.eulerAngles = LookAt2DTool.LookAt2D(_lastClickOne.transform, target);
+            nowLink.transform.eulerAngles = LookAt2DTool.LookAt2DAddRotation(_lastClickOne.transform, target);
         }
 
         //获取点击的属性按钮

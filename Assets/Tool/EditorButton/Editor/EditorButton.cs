@@ -24,6 +24,7 @@ public class EditorButton : Editor
 		}
 	}
 
+
 	EditorButtonState[] editorButtonStates;
 
 	delegate object ParameterDrawer(ParameterInfo parameter, object val);
@@ -51,13 +52,11 @@ public class EditorButton : Editor
 		{typeof(Vector2),"Vector2"},
 		{typeof(Quaternion),"Quaternion"}
 	};
-
-	public override void OnInspectorGUI()
+    public override void OnInspectorGUI()
 	{
 		base.OnInspectorGUI();
 
 		var mono = target as MonoBehaviour;
-
 		var methods = mono.GetType()
 			.GetMembers(BindingFlags.Instance | BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public |
 				BindingFlags.NonPublic)
@@ -212,7 +211,20 @@ public class EditorButton : Editor
 
 	string MethodDisplayName(MethodInfo method) {
 		StringBuilder sb = new StringBuilder ();
-		sb.Append (method.Name +"(");
+        //TODO:修改
+        EditorButtonAttribute buttonAttribute = (EditorButtonAttribute)method.GetCustomAttributes(typeof(EditorButtonAttribute), true)[0];
+        if (buttonAttribute.customName!=null)
+		{
+			string customName = buttonAttribute.customName;
+            sb.Append(customName + "(");
+		}
+		else
+		{
+            sb.Append(method.Name + "(");
+		}
+
+	
+
 		var methodParams = method.GetParameters ();
 		foreach (ParameterInfo parameter in methodParams) {
 			sb.Append (MethodParameterDisplayName (parameter));
