@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class ErLiHeJiMiHeng : Enemy
+public class ErLiHeJiMiHeng : Enemy2
 {
     public Transform player;//玩家位置
     public Transform transOwn;//自身位置

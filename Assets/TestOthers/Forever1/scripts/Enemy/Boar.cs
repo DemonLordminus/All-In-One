@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boar : Enemy
+public class Boar : Enemy2
 {
     public override void Move()
     {

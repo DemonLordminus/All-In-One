@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class YiDiZhiHongXia : Enemy
+public class YiDiZhiHongXia : Enemy2
 {
     //public LayerMask Obstacle;
     public Transform player;

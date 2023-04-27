@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class ShanTianLiang : Enemy
+public class ShanTianLiang : Enemy2
 {
     public Transform transOwn;
     public Transform player;
